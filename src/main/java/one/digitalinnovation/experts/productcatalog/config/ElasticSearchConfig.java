@@ -26,7 +26,7 @@ public class ElasticSearchConfig extends AbstractElasticsearchConfiguration {
     @Bean
     @Override
     public EntityMapper entityMapper() {
-         ElasticsearchEntityMapper entityMapper = new ElasticsearcEntityMapper(elasticsearchMappingContext(),
+         ElasticsearchEntityMapper entityMapper = new ElasticsearchEntityMapper(elasticsearchMappingContext(),
                 new DefaultConversionService());
         entityMapper.setConversions(elasticsearchCustomConversions());
 
